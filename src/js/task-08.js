@@ -33,7 +33,6 @@ function formSubmit(event) {
     if (mail === '' || password === '') { 
         alert('Все поля должны быть заполнены!')
     }
-    
     const formData = {
         mail,
         password,
