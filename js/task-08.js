@@ -31,7 +31,8 @@ function formSubmit(event) {
     const password = formElements.password.value;
     
     if (mail === '' || password === '') { 
-        alert('Все поля должны быть заполнены!')
+        alert('Все поля должны быть заполнены!');
+        return;
     }
     const formData = {
         mail,
@@ -41,3 +42,4 @@ function formSubmit(event) {
     refs.form.reset();
 }
 refs.form.addEventListener('submit', formSubmit);
+
